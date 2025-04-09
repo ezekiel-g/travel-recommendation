@@ -32,6 +32,11 @@ nav a {
 /* Basic CSS for the form elements */
 body {
     font-family: Arial, sans-serif;
+    background-image: url('./assets/images/airplane-in-sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /* margin: 20px; */
 }
 
@@ -48,8 +53,8 @@ label {
     width: 100px;
 }
 
-input[type="text"],
-input[type="number"],
+input[type='text'],
+input[type='number'],
 select {
     width: 200px;
     padding: 5px;
@@ -89,4 +94,28 @@ h2 {
 #result img {
     width: 200px;
     height: 100px;
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #4caf50;
 }
