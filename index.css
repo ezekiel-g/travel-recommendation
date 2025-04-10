@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 nav {
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -40,10 +40,6 @@ body {
     /* margin: 20px; */
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 div {
     margin-bottom: 10px;
 }
@@ -62,19 +58,42 @@ select {
 
 button {
     padding: 7px 15px;
-    background-color: #4caf50;
+    background-color: #08246F;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #1D3B8D;
 }
 
 /* Basic CSS for the report section */
 h2 {
     margin-top: 30px;
+}
+
+.home-left {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    font-size: xx-large;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.info-tile {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-text {
+    color: #FFFFFF;
+    opacity: 100%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 #report,
@@ -96,26 +115,9 @@ h2 {
     height: 100px;
 }
 
-#contactForm {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 #contactForm input,
 #contactForm textarea {
     width: 100%;
     margin-bottom: 15px;
     padding: 8px;
-}
-
-#contactForm button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#contactForm button:hover {
-    background-color: #4caf50;
 }
