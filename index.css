@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     background-color: #F0F0F0;
     padding: 15px 25px;
@@ -27,11 +28,10 @@ nav a {
 }
 
 body {
-    height: 100vh;
     font-family: Arial, sans-serif;
     background-image: url('./assets/images/airplane-in-sky.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 5px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -50,7 +50,7 @@ select {
 button {
     padding: 7px 15px;
     background-color: #08246F;
-    color: white;
+    color: #FFFFFF;
     border: none;
     cursor: pointer;
 }
@@ -61,28 +61,34 @@ button:hover {
 
 .home-container {
     display: flex;
-    height: 100vh;
 }
 
 .home-description {
-    flex: 1;
+    flex: 0 0 42%;
     height: 100%;
     padding: 25px;
     font-size: xx-large;
-    background-color: rgba(128, 128, 128, 0.5);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .search-results {
     flex: 1;
-    height: 100%;
 }
 
 .info-tile {
+    height: fit-content;
     margin: 25px;
     padding: 25px;
     background-color: rgba(128, 128, 128, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-tile img {
+    width: 100%;
+    margin-bottom: 25px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
 }
 
 .info-text {
@@ -91,27 +97,8 @@ button:hover {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-#report,
-#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-}
-#result {
-    height: 400px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-#result img {
-    width: 200px;
-    height: 100px;
-}
-
-#contact-form input,
-#contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     margin-bottom: 15px;
     padding: 8px;
