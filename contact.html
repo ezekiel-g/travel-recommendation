@@ -16,12 +16,10 @@
             </ul>
         </nav>
 
-        
-        
         <div class="info-tile">
             <span class="info-text">
                 <h1>Contact Us</h1><br>
-                <form id="contactForm">
+                <form id="contact-form" onsubmit="submitContactForm(event)">
                     <div>
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required />
@@ -39,14 +37,20 @@
                             required
                         ></textarea>
                     </div>
-                    <button type="submit" onclick="thankYou()">Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </span>
         </div>
 
         <script>
-            const thankYou = () => {
-                alert('Thank you for contacting us!')
+            const submitContactForm = event => {
+                event.preventDefault()
+                const form = document.getElementById('contact-form')
+
+                if (form.checkValidity()) {
+                    form.submit()
+                    alert('Thank you for contacting us!')
+                }
             }
         </script>
     </body>
