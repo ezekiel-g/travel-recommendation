@@ -19,7 +19,7 @@
         <div class="info-tile">
             <span class="info-text">
                 <h1>Contact Us</h1><br>
-                <form id="contact-form" onsubmit="submitContactForm(event)">
+                <form class="contact-form" onsubmit="submitContactForm(event)">
                     <div>
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required />
@@ -45,7 +45,7 @@
         <script>
             const submitContactForm = event => {
                 event.preventDefault()
-                const form = document.getElementById('contact-form')
+                const form = document.getElementsByClassName('contact-form')[0]
 
                 if (form.checkValidity()) {
                     form.submit()
