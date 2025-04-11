@@ -36,10 +36,6 @@ body {
     background-attachment: fixed;
 }
 
-div {
-    margin-bottom: 10px;
-}
-
 input[type='text'],
 input[type='number'],
 select {
@@ -53,6 +49,7 @@ button {
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    max-width: 72px;
 }
 
 button:hover {
@@ -75,20 +72,46 @@ button:hover {
     flex: 1;
 }
 
-.info-tile {
-    height: fit-content;
+.search-result-tile {
+    display: flex;
+    align-items: center;
     margin: 25px;
     padding: 25px;
     background-color: rgba(128, 128, 128, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    padding: 25px;
 }
 
-.info-tile img {
-    width: 100%;
-    margin-bottom: 25px;
+.search-result-tile img {
+    width: 40%;
+    height: auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
+}
+
+.search-result-text {
+    color:#FFFFFF;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-tile {
+    width: 50%;
+    height: fit-content;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-text {
