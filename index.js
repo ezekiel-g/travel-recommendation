@@ -6,18 +6,20 @@ const clearSearchResults = () => {
 const createResultTile = result => {
     const resultTile = document.createElement('div')
     const resultSpan = document.createElement('span')
-    resultTile.classList.add('info-tile')
-    resultSpan.classList.add('info-text')
-    resultTile.appendChild(resultSpan)
-
+    resultTile.classList.add('search-result-tile')
+    resultSpan.classList.add('search-result-text')
+    
     if (typeof result === 'string') {
         resultSpan.innerHTML = result
     } else {
-        resultSpan.innerHTML += `<img src="./assets/images/${result.imageUrl}">`
+        resultTile.innerHTML += `<img src="./assets/images/${result.imageUrl}">`
         resultSpan.innerHTML += `<h2>${result.name}</h2><br>`
         resultSpan.innerHTML += `<p>${result.description}</p><br>`
         resultSpan.innerHTML += `<button>Visit</button>`
     }
+
+    resultTile.appendChild(resultSpan)
+    
     return resultTile
 }
 

@@ -16,30 +16,32 @@
             </ul>
         </nav>
 
-        <div class="info-tile">
-            <span class="info-text">
-                <h1>Contact Us</h1><br>
-                <form class="contact-form" onsubmit="submitContactForm(event)">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            required
-                        ></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </span>
+        <div class="info-container">
+            <div class="info-tile">
+                <span class="info-text">
+                    <h1>Contact Us</h1><br>
+                    <form class="contact-form" onsubmit="submitContactForm(event)">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </span>
+            </div>
         </div>
 
         <script>
