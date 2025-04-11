@@ -49,6 +49,15 @@ const performSearch = () => {
                         if (categories.includes(key) && Array.isArray(value)) {
                             value.forEach(categoryItem => {
                                 let isMatchFound = false
+
+                                if (
+                                    key.toLowerCase() === input ||
+                                    pluralize.singular(key.toLowerCase()) === input ||
+                                    pluralize.plural(key.toLowerCase()) === input
+                                ) {
+                                    isMatchFound = true
+                                }
+
                                 const categoryItemsToProcess = [categoryItem]
 
                                 while (categoryItemsToProcess.length > 0 && !isMatchFound) {
