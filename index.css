@@ -56,15 +56,6 @@ button:hover {
     background-color: #1D3B8D;
 }
 
-.social-media-icons {
-    display: flex;
-}
-
-.social-media-icons img {
-    width: 25px;
-    aspect-ratio: 1 / 1;
-}
-
 .home-container {
     display: flex;
 }
